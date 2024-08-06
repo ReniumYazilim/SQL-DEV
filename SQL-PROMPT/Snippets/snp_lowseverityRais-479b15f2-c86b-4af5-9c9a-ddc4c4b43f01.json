@@ -1,0 +1,6 @@
+{
+  "id": "479b15f2-c86b-4af5-9c9a-ddc4c4b43f01",
+  "prefix": "snp_lowseverityRais",
+  "description": "",
+  "body": "Waitfor delay '00:00:05' $CURSOR$\r\nRaiserror('Uyarı...' ,0,1)    "
+}

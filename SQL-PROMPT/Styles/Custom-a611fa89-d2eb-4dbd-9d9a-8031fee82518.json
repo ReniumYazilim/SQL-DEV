@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "id": "a611fa89-d2eb-4dbd-9d9a-8031fee82518",
+    "name": "Custom"
+  },
+  "whitespace": {
+    "newLines": {
+      "preserveExistingEmptyLinesBetweenStatements": false,
+      "preserveExistingEmptyLinesAfterBatchSeparator": false,
+      "alignMultilineCommentsMatchingPatterns": true,
+      "emptyLinesBetweenStatements": 0,
+      "emptyLinesAfterBatchSeparator": 0
+    }
+  },
+  "lists": {
+    "placeSubsequentItemsOnNewLines": "never",
+    "alignSubsequentItemsWithFirstItem": false,
+    "alignItemsAcrossClauses": false,
+    "placeCommasBeforeItems": true
+  },
+  "parentheses": {
+    "collapseParenthesesShorterThan": 75,
+    "addSpacesAroundParentheses": false,
+    "addSpacesInsideParentheses": true
+  },
+  "casing": {
+    "reservedKeywords": "uppercase",
+    "builtInFunctions": "uppercase",
+    "builtInDataTypes": "uppercase",
+    "globalVariables": "uppercase",
+    "useObjectDefinitionCase": true
+  },
+  "dml": {
+    "collapseShortStatements": true,
+    "collapseStatementsShorterThan": 75,
+    "collapseShortSubqueries": true,
+    "collapseSubqueriesShorterThan": 75
+  },
+  "ddl": {
+    "placeFirstProcedureParameterOnNewLine": "never",
+    "collapseShortStatements": true,
+    "collapseStatementsShorterThan": 75
+  },
+  "controlFlow": {
+    "placeBeginAndEndOnNewLine": false,
+    "collapseShortStatements": true,
+    "collapseStatementsShorterThan": 78
+  },
+  "cte": {
+    "placeAsOnNewLine": false
+  },
+  "variables": {
+    "alignDataTypesAndValues": false,
+    "placeAssignedValueOnNewLineIfLongerThanMaxLineLength": false,
+    "placeEqualsSignOnNewLine": true
+  },
+  "joinStatements": {
+    "join": {
+      "keywordAlignment": "toTable",
+      "indentJoinTable": false
+    },
+    "on": {
+      "placeOnNewLine": false,
+      "keywordAlignment": "indented",
+      "conditionAlignment": "toInner"
+    }
+  },
+  "insertStatements": {
+    "columns": {
+      "parenthesisStyle": "compactSimple",
+      "indentContents": false,
+      "placeSubsequentColumnsOnNewLines": "never"
+    },
+    "values": {
+      "parenthesisStyle": "compactSimple"
+    }
+  },
+  "functionCalls": {
+    "placeArgumentsOnNewLines": "never"
+  },
+  "caseExpressions": {
+    "placeExpressionOnNewLine": false,
+    "placeFirstWhenOnNewLine": "never",
+    "whenAlignment": "toFirstItem",
+    "collapseShortCaseExpressions": true,
+    "collapseCaseExpressionsShorterThan": 75
+  },
+  "operators": {
+    "comparison": {
+      "addSpacesAround": false
+    },
+    "andOr": {
+      "placeOnNewLine": "never",
+      "alignment": "toFirstListItem"
+    },
+    "between": {
+      "placeOnNewLine": false
+    },
+    "in": {
+      "placeFirstValueOnNewLine": "never",
+      "placeSubsequentValuesOnNewLines": "never"
+    }
+  }
+}

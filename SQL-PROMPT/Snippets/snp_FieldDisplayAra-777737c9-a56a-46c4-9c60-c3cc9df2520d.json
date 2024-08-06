@@ -1,0 +1,6 @@
+{
+  "id": "777737c9-a56a-46c4-9c60-c3cc9df2520d",
+  "prefix": "snp_FieldDisplayAra",
+  "description": "",
+  "body": "Select F.CAPTION, * From FIELDDISPLAY F WHERE F.FIELDNAME LIKE '%STARTDATE%'\r\n"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "9659dde9-b7f7-4707-8a97-b09f47a02f8c",
+  "prefix": "snp_HataAnaliz",
+  "description": "",
+  "body": "SELECT *\r\nFROM VE_PIDERRORS VD\r\nWHERE VD.TRANSDATE BETWEEN '2024-05-02 00:00:00' AND '2024-05-02 00:00:00' AND VD.PWORKSTATIONID=28\r\n--ORDER BY  \r\n"
+}

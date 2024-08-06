@@ -1,0 +1,6 @@
+{
+  "id": "182ffe31-d6b6-426e-bde7-2b9d986d618d",
+  "prefix": "snp_KacinciHafta",
+  "description": "",
+  "body": "SELECT DATEPART(ISO_WEEK, GETDATE())"
+}

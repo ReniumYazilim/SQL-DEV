@@ -1,0 +1,6 @@
+{
+  "id": "4d517078-f11d-4202-8f4d-463f29ab6710",
+  "prefix": "snp_PkTablosuAra",
+  "description": "",
+  "body": "SELECT t.name AS Table_Name, c.name AS Column_Name\r\nFROM sys.tables t\r\n     INNER JOIN sys.indexes i ON t.object_id=i.object_id\r\n     INNER JOIN sys.index_columns ic ON i.object_id=ic.object_id AND i.index_id=ic.index_id\r\n     INNER JOIN sys.columns c ON ic.object_id=c.object_id AND c.column_id=ic.column_id\r\nWHERE i.is_primary_key=1 AND c.name='$PASTE$'\r\n"
+}
