@@ -1,0 +1,6 @@
+{
+  "id": "a3c65fca-3c4c-4c6e-b4e6-fbc2c2394479",
+  "prefix": "snp_RaisAltSatırlıFormat",
+  "description": "",
+  "body": "Declare @msj1 Varchar(Max) = '';\r\n\r\n            -- Proper newline using CHAR(13) + CHAR(10) to format the message correctly\r\n            Set @msj1 = CONCAT(@msj1, CHAR(13) + CHAR(10), 'Depo miktar : ', @MsjWarehouseQuantity);\r\n            Set @msj1 = CONCAT(@msj1, CHAR(13) + CHAR(10), 'Girilen miktar : ', @SPQuantity);\r\n\r\n            If (Select  dbo.Fn_Rn_Inventory_GetQuantitySerie(@LotId, Null, @WarehouseId)) < @SPQuantity Begin\r\n                Raiserror('Ürün depoda bulunamadı.%s', 16, 1, @msj1);\r\n            End"
+}

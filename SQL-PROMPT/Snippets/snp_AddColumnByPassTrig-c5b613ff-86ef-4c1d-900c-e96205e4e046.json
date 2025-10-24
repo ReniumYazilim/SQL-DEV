@@ -1,0 +1,6 @@
+{
+  "id": "c5b613ff-86ef-4c1d-900c-e96205e4e046",
+  "prefix": "snp_AddColumnByPassTrig",
+  "description": "",
+  "body": "\r\nALTER TABLE dbo.Tb_Rn_Production_Routes ADD ByPassTrig Bit Default 0"
+}

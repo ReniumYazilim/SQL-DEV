@@ -1,0 +1,6 @@
+{
+  "id": "b468757c-50b2-49d1-835c-f58c1a977ed6",
+  "prefix": "snp_ObjectDiff",
+  "description": "",
+  "body": "Select  sc.name As SqlObjectsD, T.FieldName ObjectsD\r\nFrom    sys.columns sc\r\n        Inner Join sys.objects so On\r\n                   so.object_id = sc.object_id\r\n        Inner Join sys.types st On\r\n                   sc.user_type_id = st.user_type_id\r\n        Full Outer Join dbo.PV100_ObjectsD T On\r\n                        T.ITObjectName = so.name And   T.FieldName = sc.name\r\nWhere   so.name = 'Pv_Rn_Inventory_Bills' And   st.user_type_id < 257 And   st.is_user_defined = 0\r\n\r\nSelect  sc.name As SqlObjectsD, T.FieldName ObjectsD\r\nFrom    dbo.PV100_ObjectsD T\r\n        Inner Join sys.objects so On\r\n                   T.ITObjectName = so.name\r\n        Full Outer Join sys.columns sc On\r\n                        so.object_id = sc.object_id And T.FieldName = sc.name\r\n        Inner Join sys.types st On\r\n                   sc.user_type_id = st.user_type_id\r\nWhere   so.name = 'Sv_Rn_Inventory_ShipmentPlanItems' And   st.user_type_id < 257 And   st.is_user_defined = 0"
+}

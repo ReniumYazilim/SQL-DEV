@@ -1,0 +1,6 @@
+{
+  "id": "a4a494e1-8b21-401f-9860-2e989259218c",
+  "prefix": "snp_CreateCursorSp",
+  "description": "Create SP CURSOR",
+  "body": "Create Procedure dbo.Sp_Rn_$CURSOR$\nAs\nSet NoCount On\n\nBegin\n    /*\n        Yazan\t: renium\n        Tarih\t: 12.10.2024\n        Açıklama:\n    */\n    Begin Try\n        Declare @p Int\n\n        Declare cName Cursor Local For\n        Select  * From  dbo.Tb_Rn_Inventory_Items II\n\n        Open cName\n\n        Fetch Next From cName\n        Into @p\n\n        While @@FETCH_STATUS = 0 Begin\n\n            --yapılacak işlem yazılır\n            Exec sp @p = @p\n\n            Fetch Next From cName\n            Into @p\n        End\n\n        Close cName\n        Deallocate cName\n    End Try\n    Begin Catch\n        Declare @ObjectName NVarchar(126);\n\n        Set @ObjectName = OBJECT_NAME(@@PROCID);\n\n        Exec dbo.SP100_GenerateError @ObjectName;\n    End Catch\nEnd\nGo"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "0c85b39e-3122-44db-9de0-603b18f4bec6",
+  "prefix": "snp_CreateSp",
+  "description": "Create Procedure",
+  "body": "Create Procedure  dbo.Sp_Rn_$CURSOR$\nAs\nSet NoCount On\nBegin \n\t/*\n\t\tYazan\t: $USER$\n\t\tTarih\t: $DATE$\n\t\tAçıklama:\n\t*/\n    Begin Try\n\t\t\n        \n    End Try \n    Begin Catch\t\n        Declare @ObjectName NVarchar(126);\n        Set @ObjectName = OBJECT_NAME(@@PROCID);\n        Exec SP100_GenerateError @ObjectName;\n    End Catch\nEnd\nGo\n\n\n"
+}

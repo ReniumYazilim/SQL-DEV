@@ -1,0 +1,6 @@
+{
+  "id": "a96a5795-0dcd-40bc-a1a5-7e2693f0aafc",
+  "prefix": "snp_AltF1",
+  "description": "",
+  "body": "Exec sys.sp_help @objname = N'$PASTE$'"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "5b2bed11-45f3-4034-897e-7f43f25cae92",
+  "prefix": "snp_IsNullStr",
+  "description": "",
+  "body": "ISNULL($PASTE$, '') = <> ''"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "9e2d8538-4332-4395-94a0-8b05774185d9",
+  "prefix": "snp_CreateForeignKey",
+  "description": "",
+  "body": "Alter Table $TableName$  With Check Add  Constraint [Fk_$TableName$_$TableName2$_$ColumnName$] Foreign Key([$ColumnName$])\r\nReferences $TableName2$ ([$ColumnName$]) --On Delete Cascade\r\nGo\r\n\r\nAlter Table $TableName$ Check Constraint [Fk_$TableName$_$TableName2$_$ColumnName$]\r\nGo\r\n",
+  "placeholders": [
+    {
+      "name": "TableName",
+      "defaultValue": ""
+    },
+    {
+      "name": "ColumnName",
+      "defaultValue": ""
+    },
+    {
+      "name": "TableName2",
+      "defaultValue": ""
+    }
+  ]
+}

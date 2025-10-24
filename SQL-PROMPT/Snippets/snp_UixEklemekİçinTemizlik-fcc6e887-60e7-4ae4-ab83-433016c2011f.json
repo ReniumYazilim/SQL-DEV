@@ -1,0 +1,6 @@
+{
+  "id": "fcc6e887-60e7-4ae4-ab83-433016c2011f",
+  "prefix": "snp_UixEklemekİçinTemizlik",
+  "description": "",
+  "body": ";With T As (Select  ROW_NUMBER() Over (Partition By RIL.IconLibKodu Order By RIL.IconLibID) As Rn, * From   dbo.RN100_IconLib RIL)\r\nDelete  T   From T Where T.Rn > 1;"
+}

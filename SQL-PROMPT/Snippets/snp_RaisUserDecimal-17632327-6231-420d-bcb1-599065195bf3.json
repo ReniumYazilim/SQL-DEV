@@ -1,0 +1,6 @@
+{
+  "id": "17632327-6231-420d-bcb1-599065195bf3",
+  "prefix": "snp_RaisUserDecimal",
+  "description": "",
+  "body": "Declare @xVarchar Varchar(18) = CONVERT(Varchar(18),@$SELECTIONEND$)\t\t\t\t\r\nIf $CURSOR$ = @sssip Begin\r\n\tRaiserror('%d, %d', 16, 1, $SELECTEDTEXT$, @sssip)\r\nEnd"
+}

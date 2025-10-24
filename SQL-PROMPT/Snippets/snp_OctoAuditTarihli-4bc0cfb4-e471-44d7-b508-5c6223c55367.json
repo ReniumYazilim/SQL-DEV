@@ -1,0 +1,6 @@
+{
+  "id": "4bc0cfb4-e471-44d7-b508-5c6223c55367",
+  "prefix": "snp_OctoAuditTarihli",
+  "description": "",
+  "body": "Select      *\r\nFrom        Octo_Audits.dbo.DDLEvents\r\nWhere       EventDate >= '2025-09-21 00:00:00.000' --And DatabaseName = DB_NAME()\r\nOrder By    OctoEventID Desc"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "d76dfa59-4a6c-4aea-9e2b-c3ecd8e97fd8",
+  "prefix": "snp_AddComment",
+  "description": "",
+  "body": "/*\r\nAuthor\t\t   : renium\r\nDate\t\t   : 24.08.2024\r\n--------------------------------------------------------------------------------------------------------------------------\r\nDescription[Tr]:\nBu saklı yordam, üretim rotalarının onay sürecini yönetmekle sorumludur.\nVerilen aktiflik durumuna göre rota detaylarını günceller:\n- Eğer @IsActive 0 olarak ayarlanmışsa, aşağıdaki işlemleri gerçekleştirir:\n  1. Verilen RouteId için rota detaylarının mevcut olup olmadığını kontrol eder. Eğer mevcut değilse, hata mesajı üretir.\n\r\n--------------------------------------------------------------------------------------------------------------------------\nDescription[En]:\nThis stored procedure is responsible for handling the approval process for production routes.\nIt updates route details based on the active status provided:\n- If @IsActive is set to 0, it performs the following actions:\n  1. Checks if route details exist for the given RouteId. If not, raises an error.\n\r\n*/"
+}

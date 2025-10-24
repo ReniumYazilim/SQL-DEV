@@ -2,7 +2,7 @@
   "id": "c8039e75-eac5-4948-95cf-53043ba4dfd1",
   "prefix": "cv",
   "description": "Create view",
-  "body": "CREATE VIEW $view_name$\n--WITH ENCRYPTION, SCHEMABINDING, VIEW_METADATA\nAS\n    $SELECTEDTEXT$$CURSOR$\n-- WITH CHECK OPTION\nGO\n",
+  "body": "CREATE VIEW $view_name$\nAS\n    $SELECTEDTEXT$$CURSOR$\nGO\n",
   "placeholders": [
     {
       "name": "view_name",

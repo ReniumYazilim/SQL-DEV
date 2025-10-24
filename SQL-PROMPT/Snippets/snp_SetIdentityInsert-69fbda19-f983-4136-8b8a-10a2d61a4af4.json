@@ -1,0 +1,6 @@
+{
+  "id": "69fbda19-f983-4136-8b8a-10a2d61a4af4",
+  "prefix": "snp_SetIdentityInsert",
+  "description": "",
+  "body": "Set Identity_Insert $CURSOR$ On"
+}

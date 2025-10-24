@@ -1,0 +1,6 @@
+{
+  "id": "2a22c282-b731-42f1-8c54-69e1652a1a4e",
+  "prefix": "snp_IsNull0",
+  "description": "",
+  "body": "ISNULL($PASTE$, 0) = <> 0"
+}

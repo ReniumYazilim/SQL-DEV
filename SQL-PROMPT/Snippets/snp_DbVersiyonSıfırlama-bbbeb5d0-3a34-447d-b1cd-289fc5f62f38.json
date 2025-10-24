@@ -1,0 +1,6 @@
+{
+  "id": "bbbeb5d0-3a34-447d-b1cd-289fc5f62f38",
+  "prefix": "snp_DbVersiyonSıfırlama",
+  "description": "",
+  "body": "Select * From dbo.Db_Version DV\r\nSelect * From dbo.Db_SchemaSnapshots DSS\r\nSelect * From dbo.Db_Migrations DM\r\nSelect * From dbo.Db_MigrationErrors DME\r\n\r\n\r\n\r\n--Delete dbo.Db_Migrations Where Version = '1.0.1'\r\n--Delete dbo.Db_SchemaSnapshots Where Version = '1.0.1'\r\n--Delete dbo.Db_Version Where Version = '1.0.1'\r\n--Delete dbo.Db_MigrationErrors Where Version = '1.0.1'\r\n--Drop Table dbo.Db_Migrations\r\n--Drop Table dbo.Db_SchemaSnapshots\r\n--Drop Table dbo.Db_Version\r\n--Drop Table dbo.Db_MigrationErrors"
+}

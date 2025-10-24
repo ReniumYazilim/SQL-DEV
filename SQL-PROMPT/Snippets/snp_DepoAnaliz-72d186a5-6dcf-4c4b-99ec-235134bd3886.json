@@ -1,0 +1,6 @@
+{
+  "id": "72d186a5-6dcf-4c4b-99ec-235134bd3886",
+  "prefix": "snp_DepoAnaliz",
+  "description": "",
+  "body": "Select      ISQBW.[Depo Adı], ISQBW.TransactionTypeId, ISQBW.TransactionTypeCode, ISQBW.ItemId, ISQBW.LotId, ISQBW.SerieId\r\n          , *\r\nFrom        dbo.Pv_Rn_Inventory_BillItemSeries ISQBW\r\nWhere         ISQBW.SerieId = 90083\r\nOrder By    ISQBW.AddDate\r\n\r\n\r\nSelect      ITILA.TransactionDate, ITILA.AddDate, ITILA.TransactionTypeId, ITILA.TransactionTypeCode, ITILA.WarehouseName\r\n          , ITILA.ItemId, ITILA.LotId, ITILA.SerieId, ITILA.Quantity, ITILA.BillId, *\r\nFrom        dbo.Pv_Rn_Inventory_TransactionItemLotAnalysis ITILA\r\nWhere         ITILA.WarehouseId = 160 And ITILA.SerieId = 90083\r\nOrder By    ITILA.AddDate\r\nGo \r\n\r\n\r\nSelect  TFRISQBWAO.WarehouseId, TFRISQBWAO.ItemId, TFRISQBWAO.LotId, TFRISQBWAO.SerieId, TFRISQBWAO.TotalQuantity, *\r\nFrom    dbo.TvFn_Rn_Inventory_SeriesQuantityByWarehouse_AsOf(GETDATE()) TFRISQBWAO"
+}

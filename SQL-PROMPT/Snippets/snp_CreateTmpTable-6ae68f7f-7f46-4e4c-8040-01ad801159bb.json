@@ -1,0 +1,16 @@
+{
+  "id": "6ae68f7f-7f46-4e4c-8040-01ad801159bb",
+  "prefix": "snp_CreateTmpTable",
+  "description": "",
+  "body": "\r\nCreate Table dbo.Tmp_Rn_$TableName$(\r\n\tTmpId Int Identity(1,1) NOT NULL,\r\n\t$ColumnName$Id int NOT NULL,\r\n\tHostName nvarchar(max) NOT NULL,\r\n\tAddDate DateTime Not Null Default(GETDATE()),\r\n\tAddUser Int Not Null,\r\n\tUpdateDate DateTime Null,\r\n\tUpdateUser Int  Null\r\n\tConstraint Pk_Rn_$TableName$             \r\n        Primary Key Clustered (TmpId Desc)\r\n) On [PRIMARY];\r\nGo\r\n\r\nCreate View Tmpv_Rn_$TableName$\r\n--WITH ENCRYPTION, SCHEMABINDING, VIEW_METADATA\r\nAS\r\n    Select * From dbo.Tmp_Rn_$TableName$\r\n    --joinli hali\r\n-- WITH CHECK OPTION\r\nGO\r\n\r\n\r\n\r\n\r\n",
+  "placeholders": [
+    {
+      "name": "TableName",
+      "defaultValue": null
+    },
+    {
+      "name": "ColumnName",
+      "defaultValue": null
+    }
+  ]
+}

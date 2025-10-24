@@ -1,0 +1,6 @@
+{
+  "id": "fcea1a15-e8d8-4eae-8cad-753cc236e582",
+  "prefix": "snp_AlanYenile",
+  "description": "",
+  "body": "Exec dbo.SP100_AlanYenile @ITObjectName = '$PASTE$'"
+}

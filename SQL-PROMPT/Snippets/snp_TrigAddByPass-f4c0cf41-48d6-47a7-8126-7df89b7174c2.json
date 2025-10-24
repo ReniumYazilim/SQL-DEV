@@ -1,0 +1,6 @@
+{
+  "id": "f4c0cf41-48d6-47a7-8126-7df89b7174c2",
+  "prefix": "snp_TrigAddByPass",
+  "description": "",
+  "body": "If UPDATE(ByPassTrig)\r\n            Return;"
+}

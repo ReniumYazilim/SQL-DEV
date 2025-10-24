@@ -1,0 +1,6 @@
+{
+  "id": "1b176893-6a59-45cb-9fa4-812516884823",
+  "prefix": "snp_BillGiris",
+  "description": "",
+  "body": "Select * From dbo.Tb_Rn_Inventory_TransactionTypes ITT\r\nSelect * From dbo.Tb_Rn_Inventory_Warehouses IW\r\nSelect * From dbo.Tb_Rn_Finance_Firms FF\r\nSelect * From dbo.Pv_Rn_Inventory_SeriesQuantityByWarehouse IL Where IL.ItemId = 10 And IL.TotalQuantity > 0"
+}

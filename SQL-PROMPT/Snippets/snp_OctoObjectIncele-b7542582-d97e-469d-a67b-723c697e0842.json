@@ -1,0 +1,6 @@
+{
+  "id": "b7542582-d97e-469d-a67b-723c697e0842",
+  "prefix": "snp_OctoObjectIncele",
+  "description": "",
+  "body": "Select  ROM.ITObjectName, ROD.FieldName, ROD.FieldType, *\r\nFrom    dbo.RN100_ObjectsM ROM\r\n        Left Outer Join dbo.RN100_ObjectsD ROD On\r\n                        ROD.ITObjectID = ROM.ITObjectID\r\nWhere   ROM.ITObjectName = 'TmpPv_Rn_Inventory_Lots_SumQuantity'"
+}

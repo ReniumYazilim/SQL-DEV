@@ -1,0 +1,6 @@
+{
+  "id": "6127bfcf-5b3c-4e79-a7e3-e3db326eadb1",
+  "prefix": "snp_UpdateEditFormVisible",
+  "description": "",
+  "body": "Select  ROM.Visible, ROM.EditFormVisible From   dbo.RN100_ObjectsD ROM Where ROM.ITObjectID = 3408\r\n\r\nUpdate  ROM\r\nSet     ROM.EditFormVisible = ROM.Visible, ROM.IsITUpdate = ROM.IsITUpdate\r\nFrom    dbo.RN100_ObjectsD ROM\r\nWhere   ROM.ITObjectID = 3408"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "4290e313-1a51-4c5f-a2f5-274edb1bd98b",
+  "prefix": "snp_RaiseUser",
+  "description": "",
+  "body": "If $CURSOR$ = @sssip Begin\r\n    Raiserror('%d, %d', 16, 1, $CURSOR$, @sssip)\r\nEnd"
+}

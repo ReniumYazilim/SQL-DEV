@@ -1,0 +1,6 @@
+{
+  "id": "0779da9b-9589-4e85-9e0d-a3053baba762",
+  "prefix": "snp_CrGuidDefVAlueConstraint",
+  "description": "",
+  "body": "Alter Table dbo.RN100_ObjectsD\r\nAdd Constraint DF_RN100_ObjectsD_OctoCoreGuid\r\n    Default (NEWSEQUENTIALID()) For OctoCoreGuid\r\nGo"
+}

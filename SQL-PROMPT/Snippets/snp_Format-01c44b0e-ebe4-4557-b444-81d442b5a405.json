@@ -1,0 +1,6 @@
+{
+  "id": "01c44b0e-ebe4-4557-b444-81d442b5a405",
+  "prefix": "snp_Format",
+  "description": "",
+  "body": "FORMAT(50.000000, '#.#')"
+}

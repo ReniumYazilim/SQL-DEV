@@ -1,0 +1,6 @@
+{
+  "id": "0eb5a321-3a88-4979-a1d2-6d4897b2e653",
+  "prefix": "snp_AuditNesneSonDurum",
+  "description": "",
+  "body": ";With CTE As (\r\n    Select  OctoEventID, EventDate, EventType, EventDDL, EventXML, DatabaseName, SchemaName, ObjectName, HostName\r\n          , IPAddress, ProgramName, LoginName, CommitNo, IsSend\r\n          , ROW_NUMBER() Over (Partition By ObjectName Order By OctoEventID Desc) As rn\r\n    From    Octo_Audits.dbo.DDLEvents\r\n    Where   EventDate >= '2025-09-22 00:00:00.000' And  DatabaseName = DB_NAME()\r\n)\r\nSelect  * From  CTE Where   CTE.rn = 1 Order By CTE.OctoEventID Desc;"
+}

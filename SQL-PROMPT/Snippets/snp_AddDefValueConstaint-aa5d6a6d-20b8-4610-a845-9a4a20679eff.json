@@ -1,0 +1,6 @@
+{
+  "id": "aa5d6a6d-20b8-4610-a845-9a4a20679eff",
+  "prefix": "snp_AddDefValueConstaint",
+  "description": "",
+  "body": "Alter Table dbo.RN100_RolObjectsM\r\nAdd Constraint DF_RN100_RolObjectsM_ITExcelIslem\r\n    Default ((0)) For ITExcelIslem\r\nGo"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "2f659e23-b58f-4247-bb80-aa7f4ac9d66d",
+  "prefix": "snp_OctoAudit",
+  "description": "",
+  "body": "Select      *\r\nFrom        Octo_Audits.dbo.DDLEvents\r\nWhere       ObjectName = 'PSP06_URUNKODUOLUSTUR_Iplik' --And DatabaseName = DB_NAME()\r\nOrder By    OctoEventID Desc"
+}

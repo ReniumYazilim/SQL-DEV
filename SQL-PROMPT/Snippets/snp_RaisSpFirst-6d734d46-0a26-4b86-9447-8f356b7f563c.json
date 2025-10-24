@@ -1,0 +1,6 @@
+{
+  "id": "6d734d46-0a26-4b86-9447-8f356b7f563c",
+  "prefix": "snp_RaisSpFirst",
+  "description": "",
+  "body": "Raiserror(\r\n                '@WorkOrderOperationWorkStationId: <%d> parametresi alınamadı!. Kaydı seçilmemiş olabilir. Kaydı seçerek tekrar dener misiniz. \r\n\t\t\tNot: Mobil ekranlarda kaydın seçili olduğu çevresindeki mavi çerçeveden anlaşılmaktadır.', 16, 1)"
+}

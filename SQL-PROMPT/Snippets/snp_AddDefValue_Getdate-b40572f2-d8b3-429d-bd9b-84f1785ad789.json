@@ -1,0 +1,6 @@
+{
+  "id": "b40572f2-d8b3-429d-bd9b-84f1785ad789",
+  "prefix": "snp_AddDefValue_Getdate",
+  "description": "",
+  "body": "Alter Table dbo.RN100_IconLib\r\nAdd Constraint DF_RN100_IconLib_AddDate\r\n    Default (GETDATE()) For AddDate\r\nGo"
+}

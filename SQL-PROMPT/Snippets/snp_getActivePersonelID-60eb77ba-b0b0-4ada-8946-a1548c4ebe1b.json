@@ -1,0 +1,6 @@
+{
+  "id": "60eb77ba-b0b0-4ada-8946-a1548c4ebe1b",
+  "prefix": "snp_getActivePersonelID",
+  "description": "",
+  "body": "\r\nSet Quoted_Identifier ON\r\nSET ANSI_NULLS ON\r\nGO\r\nCreate Function dbo.Fn_Rn_System_GetActivePersonelID ()\r\nReturns int\r\nAs Begin\r\n    Declare @KullaniciID int\r\n    Set @KullaniciID = (Select  KullaniciID From RN100_Kullanicilar Where KullaniciKodu = (Select    dbo.F100_GetKullaniciConn()))\r\n    Return (Select  MAX(PersonelID)From RN01_Personel Where KullaniciID = @KullaniciID)\r\nEnd\r\n \r\nGO\r\n\r\n"
+}

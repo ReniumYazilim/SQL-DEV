@@ -1,0 +1,6 @@
+{
+  "id": "5d816361-d9b2-4774-98a7-834e3d016953",
+  "prefix": "snp_CreateFunctionScalar",
+  "description": "",
+  "body": "Create Function dbo.Fn_Rn_Modul_GetColumnFromTable(@P int)\r\nReturns Decimal(18, 6)\r\nAs Begin\r\n    Return (Select  Sum(Column)\r\n            From    table\r\n            Where   IBI.SourceId = @P)\r\nEnd\r\nGo"
+}

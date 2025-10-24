@@ -1,0 +1,6 @@
+{
+  "id": "afd8e3a0-5ddd-4c40-9855-a17acd133240",
+  "prefix": "snp_AddColumnOctoGuid",
+  "description": "",
+  "body": "\r\nALTER TABLE dbo.RN100_Kullanicilar\r\nADD OctoCoreGuid UNIQUEIDENTIFIER \r\n    CONSTRAINT DF_RN100_Kullanicilar_OctoCoreGuid DEFAULT NEWSEQUENTIALID();\r\nGo\r\n\r\nUpdate  dbo.RN100_Kullanicilar Set  OctoCoreGuid = Default\r\nGo\r\n\r\nCreate Unique NonClustered Index UIX_RN100_Kullanicilar_OctoCoreGuid\r\nOn dbo.[RN100_Kullanicilar] (OctoCoreGuid)\r\nOn [PRIMARY]\r\nGo    "
+}

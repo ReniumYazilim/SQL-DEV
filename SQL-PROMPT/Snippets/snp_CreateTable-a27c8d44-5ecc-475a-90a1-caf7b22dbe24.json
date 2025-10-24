@@ -1,0 +1,20 @@
+{
+  "id": "a27c8d44-5ecc-475a-90a1-caf7b22dbe24",
+  "prefix": "snp_CreateTable",
+  "description": "Basic Tanım Table",
+  "body": "\nCreate Table dbo.Tb_$TableName$(\n\t$ColumnName$Id Int Identity(1,1) NOT NULL,\n\t$ColumnName$Code nvarchar(50) NOT NULL,\n\t$ColumnName$Name nvarchar(100) NULL,\n\tAddDate DateTime Not Null Constraint DF_Tb_Rn_System_CoreObjects_AddDate Default(GETDATE()),\n\tAddUser Int Not Null,\n\tUpdateDate DateTime Null,\n\tUpdateUser Int  Null,\n\tNotes NVarchar(250),\n\tIsActive bit Constraint DF_Tb_Rn_System_CoreObjects_IsActive Default 1\n\t--, IsActive Bit Default 1 Not Null \t--Tanım tablosu ise eklenecek\n\t--, ByPassTrig Bit Default 0 \t\t\t--Update trig olacaksa eklenecek\n\t--, CONSTRAINT FK_$TableName$_$TableName2$_$ColumnName$Id\n    --    FOREIGN KEY ($ColumnName$Id) REFERENCES $TableName2$($ColumnName$Id),\n\tConstraint Pk_$TableName$              -- Custom name for the primary key constraint\n        Primary Key Clustered ($ColumnName$Id)\n) On [PRIMARY];\n\nCreate Unique Index Uix_$TableName$ On Tb_$TableName$ ($ColumnName$Code);\nGo\n\n--ekranlar için\nCreate View Sv_$TableName$\n--WITH ENCRYPTION, SCHEMABINDING, VIEW_METADATA\nAS\n    Select * From dbo.Tb_$TableName$\n-- WITH CHECK OPTION\nGO\n\n\nCreate View Pv_$TableName$\n--WITH ENCRYPTION, SCHEMABINDING, VIEW_METADATA\nAS\n    Select * From dbo.Tb_$TableName$\n    --joinli hali\n-- WITH CHECK OPTION\nGO\n\n\n\n\n",
+  "placeholders": [
+    {
+      "name": "TableName",
+      "defaultValue": ""
+    },
+    {
+      "name": "ColumnName",
+      "defaultValue": ""
+    },
+    {
+      "name": "TableName2",
+      "defaultValue": null
+    }
+  ]
+}

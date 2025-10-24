@@ -1,0 +1,6 @@
+{
+  "id": "458a437b-07d4-494f-95fa-199a9c5325a0",
+  "prefix": "snp_SistemCrtype2",
+  "description": "",
+  "body": "Select * From dbo.RN100_ObjectsM ROM Where ROM.ITObjectName In ('RN100_ObjectsD', 'RN100_ObjectsVeriIslemleri' )\r\nGo\r\n\r\nUpdate  ROM\r\nSet     ROM.CrType = 2, ROM.IsITUpdate = ROM.IsITUpdate\r\nFrom    dbo.RN100_ObjectsM ROM\r\nWhere   ROM.ITObjectName In ('RN100_ObjectsD', 'RN100_ObjectsVeriIslemleri')"
+}
