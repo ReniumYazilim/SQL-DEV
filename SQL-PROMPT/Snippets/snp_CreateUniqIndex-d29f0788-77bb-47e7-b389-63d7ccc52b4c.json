@@ -2,5 +2,15 @@
   "id": "d29f0788-77bb-47e7-b389-63d7ccc52b4c",
   "prefix": "snp_CreateUniqIndex",
   "description": "",
-  "body": "Create Unique NonClustered Index UIX_Tb_RnPj_Inventory_StitchTypes_Code\r\nOn dbo.[Tb_RnPj_Inventory_StitchTypes] (StitchTypeCode)\r\nOn [PRIMARY]\r\nGo"
+  "body": "Create Unique NonClustered Index Uix_$table_name$_$column_name$\r\nOn dbo.[$table_name$] ($column_name$)\r\nOn [PRIMARY]\r\nGo",
+  "placeholders": [
+    {
+      "name": "table_name",
+      "defaultValue": null
+    },
+    {
+      "name": "column_name",
+      "defaultValue": null
+    }
+  ]
 }

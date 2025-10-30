@@ -1,0 +1,16 @@
+{
+  "id": "174b9276-254e-4ccc-9c23-b115d0697908",
+  "prefix": "snp_AlterColumn",
+  "description": "",
+  "body": "Alter Table dbo.$table_name$ Alter Column $column_name$ NVarchar(250)\r\n",
+  "placeholders": [
+    {
+      "name": "table_name",
+      "defaultValue": null
+    },
+    {
+      "name": "column_name",
+      "defaultValue": null
+    }
+  ]
+}
